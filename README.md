@@ -1,4 +1,4 @@
-![CImg](https://github.com/user-attachments/assets/5dece3c7-093d-4a35-8a9a-04affb629ba2)
+![CImg](https://github.com/user-attachments/assets/6f422010-182f-46e7-a799-46dfb65604f6)
 # 🎬 Netflix Titles SQL Project
 This project is a comprehensive SQL-based analysis of the **Netflix Titles Dataset**, which contains metadata on all movies and TV shows available on Netflix up to mid-2021. The goal is to demonstrate SQL querying skills, data exploration techniques, and data-driven insights using a real-world dataset.
 
