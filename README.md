@@ -6,7 +6,7 @@ This project is a comprehensive SQL-based analysis of the **Netflix Titles Datas
 The Netflix Titles dataset was successfully imported into **MySQL** using the built-in CSV import functionality in **MySQL Workbench**. The import process auto-generated the schema based on the CSV structure and resolved previous encoding issues by setting the proper character set.
 
 ### ✅ Steps Followed:
-1. Open **MySQL Workbench** and Create database using command ``` CREATE DATABASE Netflix;```.
+1. Open **MySQL Workbench** and Create database using command: <pre> ```sql CREATE DATABASE Netflix; ``` </pre>
 2. Right-click on **Tables** → Select **Table Data Import Wizard**.
 3. Choose the CSV file: `netflix_titles.csv`.
 4. In the wizard, review and confirm column mappings.
