@@ -8,7 +8,7 @@ The Netflix Titles dataset was successfully imported into **MySQL** using the bu
 ### ✅ Steps Followed:
 1. Open **MySQL Workbench** and Create database using command: <pre> ```CREATE DATABASE Netflix; ``` </pre>
 2. Use the database with the command: <pre> ```USE Netflix; ``` </pre>
-3. Right-click on **Tables** → Select **Table Data Import Wizard**.
+3. Right-click on **Database Created** → Select **Table Data Import Wizard**.
 ![Screenshot 2025-05-24 at 15 50 32](https://github.com/user-attachments/assets/9b07f3b9-a168-4667-be36-175cb12df5de)
 4. Choose the CSV file: `netflix_titles.csv`.
 5. In the wizard, review and confirm column mappings.
