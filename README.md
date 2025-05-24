@@ -40,7 +40,20 @@ The Netflix Titles dataset was successfully imported into **MySQL** using the bu
 <pre>SELECT COUNT(*) AS total_titles FROM netflixdata;</pre>
 **Objective**:
 Find the total number of titles (movies + TV shows) available in the dataset.
+
 **Findings**:
 There are X titles in total.
+
 **Conclusion**:
 This gives an overview of dataset size, useful for understanding Netflix’s content library scale.
+
+### 2. Get distinct types of content
+<pre>SELECT DISTINCT type FROM netflixdata;</pre>
+**Objective**:
+Identify the different types of content offered (e.g., Movie, TV Show).
+
+**Findings**:
+Types include "Movie", "TV Show", and potentially others.
+
+**Conclusion**:
+Helps understand content categorization and plan analyses specific to content type.
