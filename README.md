@@ -37,8 +37,10 @@ The Netflix Titles dataset was successfully imported into **MySQL** using the bu
 ## SQL Queries with Objectives, Findings, and Conclusions
 ---
 ### 1. Count total records
-
-const { highlight } = require('sql-highlight')
-const sqlString = "SELECT COUNT(*) AS total_titles FROM netflixdata;"
-const highlighted = highlight(sqlString)
-console.log(highlighted)
+<pre>SELECT COUNT(*) AS total_titles FROM netflixdata;</pre>
+**Objective**:
+Find the total number of titles (movies + TV shows) available in the dataset.
+**Findings**:
+There are X titles in total.
+**Conclusion**:
+This gives an overview of dataset size, useful for understanding Netflix’s content library scale.
