@@ -1,4 +1,4 @@
-![CoverImg](https://github.com/user-attachments/assets/a376ebcd-e26e-44a6-a7fe-76533b7d0070)
+![Screenshot 2025-05-24 at 15 50 32](https://github.com/user-attachments/assets/959fa29b-12b8-4266-b3ea-55f63aea762a)![CoverImg](https://github.com/user-attachments/assets/a376ebcd-e26e-44a6-a7fe-76533b7d0070)
 # 🎬 Netflix Titles SQL Project
 This project is a comprehensive SQL-based analysis of the **Netflix Titles Dataset**, which contains metadata on all movies and TV shows available on Netflix up to mid-2021. The goal is to demonstrate SQL querying skills, data exploration techniques, and data-driven insights using a real-world dataset.
 
@@ -6,15 +6,22 @@ This project is a comprehensive SQL-based analysis of the **Netflix Titles Datas
 The Netflix Titles dataset was successfully imported into **MySQL** using the built-in CSV import functionality in **MySQL Workbench**. The import process auto-generated the schema based on the CSV structure and resolved previous encoding issues by setting the proper character set.
 
 ### ✅ Steps Followed:
-1. Open **MySQL Workbench** and Create database using command: <pre> ```sql CREATE DATABASE Netflix; ``` </pre>
-2. Right-click on **Tables** → Select **Table Data Import Wizard**.
-3. Choose the CSV file: `netflix_titles.csv`.
-4. In the wizard, review and confirm column mappings.
-5. Make sure to set encoding to `UTF-8` (important for special characters).
-6. Click **Next** to complete the import.
+1. Open **MySQL Workbench** and Create database using command: <pre> ```CREATE DATABASE Netflix; ``` </pre>
+2. Use the database with the command: <pre> ```USE Netflix; ``` </pre>
+3. Right-click on **Tables** → Select **Table Data Import Wizard**.
+![Screenshot 2025-05-24 at 15 50 32](https://github.com/user-attachments/assets/9b07f3b9-a168-4667-be36-175cb12df5de)
+4. Choose the CSV file: `netflix_titles.csv`.
+5. In the wizard, review and confirm column mappings.
+6. Make sure to set encoding to `UTF-8` (important for special characters).
+![Screenshot 2025-05-24 at 17 52 43](https://github.com/user-attachments/assets/c9d95801-e475-404d-812f-76cd38a34029)
+7. Click **Next** to complete the import.
+
+### 📌 Notes:
+- If you encounter issues with `date_added`, ensure the date format in CSV is consistent.
+- Recommended table name: `netflixdata`.
+- Make sure to clean headers if there are extra spaces or hidden characters.
    
 ## 🧠 Project Objectives
-
 - Practice and showcase SQL skills from beginner to advanced.
 - Extract meaningful insights from Netflix's content catalog.
 - Build a reusable library of SQL queries for similar datasets.
@@ -26,8 +33,12 @@ The Netflix Titles dataset was successfully imported into **MySQL** using the bu
 ## 🛠 Technologies Used
 
 - **Database**: MySQL
-- **Data Format**: JSON (for smooth import into MySQL)
-- **Tools**: SQL Workbench / DBeaver / MySQL CLI
-- **Optional**: Power BI / Tableau for visualizations
+- **Data Format**: CSV (for smooth import into MySQL)
+- **Tools**: SQL Workbench
 
 ---
+## SQL Queries with Objectives, Findings, and Conclusions
+---
+### 1. Count total records
+<pre>SELECT COUNT(*) AS total_titles 
+FROM netflixdata;</pre>
