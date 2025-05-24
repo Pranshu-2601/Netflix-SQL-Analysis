@@ -22,12 +22,9 @@ The Netflix Titles dataset was successfully imported into **MySQL** using the bu
 - Make sure to clean headers if there are extra spaces or hidden characters.
    
 ## 🧠 Project Objectives
-- Practice and showcase SQL skills from beginner to advanced.
+- Practice and showcase SQL skills.
 - Extract meaningful insights from Netflix's content catalog.
 - Build a reusable library of SQL queries for similar datasets.
-- Prepare and clean data using SQL expressions.
-- Optionally integrate results with a BI tool (Power BI, Tableau, etc.).
-
 ---
 
 ## 🛠 Technologies Used
@@ -40,5 +37,8 @@ The Netflix Titles dataset was successfully imported into **MySQL** using the bu
 ## SQL Queries with Objectives, Findings, and Conclusions
 ---
 ### 1. Count total records
-<pre>SELECT COUNT(*) AS total_titles 
-FROM netflixdata;</pre>
+
+const { highlight } = require('sql-highlight')
+const sqlString = "SELECT COUNT(*) AS total_titles FROM netflixdata;"
+const highlighted = highlight(sqlString)
+console.log(highlighted)
